@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Desarrollo actividad</title>
+</head>
+<body>
+    	<h1 align="center">Propiedades básicas de CSS, Display: inline, block, inline-block</h1>
+    	<section>
+       		<h2 align="center">Objetivos</h2>
+       		<h3>General</h3>
+         	Identificar las propiedades basicas del CSS, demostrando su aplicacion.
+         	<h3>Especificos</h3>
+         	<ul>
+             		<li>Conocer las propiedades basicas del CSS</li>
+             		<li>Mostrar la aplicacion del CSS</li>
+             		<li>Explicar la forma de uso del CSS</li>
+         	</ul>
+    		</section>
+
+    		<section>
+        	<h3>Materiales</h3>
+        	<ul>
+            		<li value="1"><a href="https://www.eniun.com/resumen-tabla-propiedades-css-valores/">Resumen propiedades CSS</a></li>
+ 			<li><a href="http://w3.unpocodetodo.info/css3/chuletacss3.php">Propiedades CSS-Display</a></li>
+			<li><a href="https://www.mclibre.org/consultar/htmlcss/css/css-modelo-caja.html#display">Display</a></li>
+			<li><a href="https://uniwebsidad.com/libros/css-avanzado/capitulo-4/propiedad-display">CSS-Display,Inline,Block,Inline-Block</a></li>
+        	</ul>
+
+    		</section>
+		
+    		<section>
+        		<h2 align="center">Contenido</h2>
+
+        		<h3>Que son las propiedades CSS</h3>
+        			<p>
+            			El lenguaje CSS que estamos usando actualmente es la versión 2.1 que es estándar y la 3.0 que todavía no está terminada de definir pero ya se está usando. La versión 3.0 agrega nuevas propiedades, que se suman a las anteriores
+        			</p>
+
+			<h3>Resumen de las propiedades mas importantes CSS</h3>
+				<p>
+           			Font-family:<br>
+				Define la familia tipográfica. Es conveniente poner una lista de dos o tres tipografías separadas por coma, porque si el usuario no tiene instalada la tipografía que nosostros elegimos, el navegador opta por mostrar la siguiente que debería ser una similar, si tampoco la tiene instalada, mostrará la tipografía por defecto.<br><br>
+				Tenemos 3 opciones para definir la elección de la familia tipográfica:1) usar una de las fuentes más comunes (web safe fonts) que muy probablemente tenga instalada el usuario (Arial, Verdana, Trebuchet, Georgia, san serif, Times), 2) subir nuestra propia fuente con una propiedad nueva que se llama @font-face, o 3) usar una fuente de Google Font, que en este momento es lo más recomendable.<br><br>
+
+				Font-size:<br>
+				Define el tamaño de la fuente y el valor se puede escribir en pixels o en ems. En este momento se recomienda usar ems. Los dos son valores relativos, el pixel es un valor relativo a la resolución de la pantalla, pero el em es relativo al tamaño de la fuente definida por el usuario. Si el usuario no cambió la configuración, el valor por defecto de los textos en todos los navegadores es de 16px. Entonces 1em = 16px.<br><br>
+
+				Color:<br>
+				Define el color de la tipografía. Los colores se pueden escribir de 3 formas distinas: con sistema hexadecimal, por ejemplo: #FF0000 (es rojo). Con los nombres de los colores (más limitado) por ejemplo: black, red, green. O usando RGB, esta paleta permite agregar el canal alfa para hacer transparencias.<br><br>
+
+				Width:<br> 
+				Define el ancho de un elemento, el valor se puede escribir en pixels, ems o porcentaje.<br><br>
+
+				Max-width o min-width:<br> 
+				Definen el ancho máximo o mínimo de un elemento. Muy importante en sitios adaptables<br><br>
+
+				Height:<br>
+				Define el alto de un elemento, el valor se puede escribir en pixels, ems o porcentaje.<br><br>
+
+				Max-height o min-height: <br>
+				Definen el alto máximo o mínimo de un elemento. Muy importante en sitios adaptables<br><br>
+
+				Padding:<br>
+				Es la distancia desde el borde de un elemento hasta su contenido.<br><br>
+
+				Margin:<br>
+				Es la distancia entre un elemento y otro (desde el borde de un elemento hacia afuera)<br><br>
+
+				Border:<br>
+				Define el borde de un elemento, su color, su estilo y grosor.<br><br>
+
+				Background: <br>
+				Define los fondos de un objeto. El fondo puede ser una imagen o un color. El color puede ser pleno o degradado. La imagen se puede repetir formando una trama (es lo que ocurre por defecto) o se puede especificar que no repita y que se coloque en determinada posición.<br> 
+        			</p>
+
+        		<h3>Propiedad Display</h3>
+        			<p>
+            			La propiedad display permite especificar el tipo de caja que se aplica en un elemento. Los diferentes tipos de cajas corresponden a diferentes tipos de contenido (texto, listas, tablas)
+				Los posibles valores de display son los siguientes:
+		
+				<ul>
+             				<li>Inline: Caja en-línea que puede ocupar varias líneas y está incluida en una caja de tipo block</li>
+             				<li>Block: Caja rectangular que forma un bloque</li>
+             				<li>Inline-Block: Caja en-línea, pero que se formatea como una caja de tipo block</li>
+         			</ul>
+
+        			</p>
+
+			<h3>Inline</h3>
+        			<p>
+	        		El "span" es el elemento inline estándar. Un elemento inline puede contener algo de texto dentro de un párrafo <span> como esto </span> sin interrumpir el flujo del párrafo. El elemento a es el elemento inline más común, ya que se usa para links.<br>
+				<img src="./imagen/Inline.PNG" width="1080px" height="100"/>
+				</p>
+
+			<h3>Block</h3>
+        			<p>
+				El "div" es el elemento block-level estándar. Un elemento block-level comienza en una nueva línea y se estira hasta la derecha e izquierda tan lejos como pueda. Otros elementos block-level muy comunes son p y form, y algunos nuevos en HTML5 son header, footer y section.<br>
+				<img src="./imagen/Block.PNG" width="1080px" height="100"/>
+				</p>
+
+			<h3>Inline-Block</h3>
+        			<p>
+				Puedes crear una cuadrícula de cajas que llene el navegador armoniosamente. Esto ha sido posible por mucho tiempo usando float, pero ahora con inline-block es aún más fácil.<br>
+				<img src="./imagen/Inline-Block.PNG" width="250px" height="100"/>
+				</p>
+
+    			<section>
+        			<h1>Mockup del sitio</h1>
+        			<img src="./imagen/Mockup.png" width="700px" height="1080"/>
+    			</section>
+   
+</body>
+</html>
